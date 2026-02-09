@@ -19,7 +19,9 @@ export const Header = () => {
         <div className="flex justify-between items-center h-16 sm:h-20">
           <Link to="/" className="flex items-center space-x-2">
             <Coffee className="h-8 w-8 text-accent" />
-            <span className="text-2xl font-serif font-bold text-primary">Prince's Den</span>
+            <span className="text-2xl font-serif font-bold text-primary">
+              Prince's Den
+            </span>
           </Link>
 
           {/* Desktop Nav */}
@@ -41,7 +43,11 @@ export const Header = () => {
             className="md:hidden p-2 text-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <MenuIcon className="h-6 w-6" />
+            )}
           </button>
         </div>
       </div>
